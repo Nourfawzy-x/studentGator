@@ -433,3 +433,63 @@
     </div>
   </div>
 </header>
+<section>
+  <section>
+    <div class="container my-5">
+      <div class="row">
+        <div
+          class="col-xl-3 col-lg-4 col-md-6"
+          *ngFor="let program of programs"
+        >
+          <div class="oneProgram my-4 p-2">
+            <div class="cover-container">
+              <img
+                [src]="program.coverpic"
+                alt="Cover Image"
+                class="cover-image"
+              />
+              <img
+                [src]="program.logopic"
+                alt="Logo Image"
+                class="logo-image"
+              />
+              <i class="fa-regular fa-heart love-icon fa-lg"></i>
+            </div>
+            <div class="content mt-5">
+              <div class="d-flex justify-content-between">
+                <p class="category rounded-pill px-3 py-1 text-center">
+                  {{ program.category }}
+                </p>
+                <p class="fee rounded-pill px-2 py-1 text-center">
+                  ${{ program.fee }}
+                </p>
+              </div>
+              <h6>{{ program.progName }}</h6>
+              <p class="fw-bolder">FIGS : ICD</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa-regular fa-calendar text-muted me-2"></i>
+                  <span>{{ program.start_date }}</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-clock text-muted me-2"></i>
+                  <span class="text-muted">2 years</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <div>
+                  <i class="fa-solid fa-earth-americas text-muted me-2"></i>
+                  <span>{{ program.lang }}</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-location-dot text-muted me-2"></i>
+                  <span class="text-muted">{{ program.city }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

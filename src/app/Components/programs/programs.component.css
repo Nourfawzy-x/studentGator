@@ -28,3 +28,42 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.cover-container {
+  position: relative;
+  width: 100%;
+}
+
+.cover-image {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.logo-image {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.love-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #e31a6a;
+}
+.category {
+  background-color: #e9ebfb;
+  font-weight: 500;
+}
+.fee {
+  background-color: #fdd5d5;
+  font-weight: 500;
+}
+.oneProgram {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}

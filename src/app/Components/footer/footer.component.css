@@ -1,0 +1,14 @@
+footer {
+  background-color: #6f77f4;
+  color: white;
+}
+.icons {
+  width: 35px;
+  height: 35px;
+  border: solid 1px white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
