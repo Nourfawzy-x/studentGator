@@ -1,0 +1,30 @@
+header {
+  background-color: #d6d8f9;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+
+  border-radius: 10px !important;
+}
+h1 {
+  font-weight: 600;
+}
+.input-group .btnn {
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  bottom: 5%;
+  height: 70%;
+  background-color: #6f77f4;
+  padding: 14px;
+  border-radius: 20% !important;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
