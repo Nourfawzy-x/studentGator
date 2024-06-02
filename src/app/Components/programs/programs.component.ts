@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ProgramsService } from '../../services/programs.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { PaginationComponent } from '../pagination/pagination.component';
 
 @Component({
   selector: 'app-programs',
   standalone: true,
-  imports: [HttpClientModule, CommonModule],
+  imports: [HttpClientModule, CommonModule, PaginationComponent],
   providers: [ProgramsService],
   templateUrl: './programs.component.html',
   styleUrl: './programs.component.css',

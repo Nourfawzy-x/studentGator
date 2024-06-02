@@ -432,64 +432,191 @@
       </div>
     </div>
   </div>
+  <div class="filter container text-black py-3 mb-4">
+    <div
+      class="row d-flex justify-content-center align-items-center text-center"
+    >
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-3">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle px-5 bg-white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            School
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cesi</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">ESAIP</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">ESSCA Business Scho</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">TOULOUSE Business S </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-3">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle px-5 bg-white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Field
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Business and management</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Computer science</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Engineering and technology </a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Arts, Design </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-3">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle px-5 bg-white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Level
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cesi</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">ESAIP</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">ESSCA Business Scho</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">TOULOUSE Business S </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-3">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle px-5 bg-white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Budget
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">2000</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">3000</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">4000</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">5000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-3">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle px-5 bg-white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">French</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-3">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle px-5 bg-white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select City
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Paris</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Reims</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Paris, Oxford, Dubai</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
-<section>
-  <section>
-    <div class="container my-5">
-      <div class="row">
-        <div
-          class="col-xl-3 col-lg-4 col-md-6"
-          *ngFor="let program of programs"
-        >
-          <div class="oneProgram my-4 p-2">
-            <div class="cover-container">
-              <img
-                [src]="program.coverpic"
-                alt="Cover Image"
-                class="cover-image"
-              />
-              <img
-                [src]="program.logopic"
-                alt="Logo Image"
-                class="logo-image"
-              />
-              <i class="fa-regular fa-heart love-icon fa-lg"></i>
+
+<section id="program-cards">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let program of programs">
+        <div class="oneProgram mt-4 p-2">
+          <div class="cover-container">
+            <img
+              [src]="program.coverpic"
+              alt="Cover Image"
+              class="cover-image"
+            />
+            <img [src]="program.logopic" alt="Logo Image" class="logo-image" />
+            <i class="fa-regular fa-heart love-icon fa-lg"></i>
+          </div>
+          <div class="content mt-5">
+            <div class="d-flex justify-content-between">
+              <p class="category rounded-pill px-3 py-1 text-center">
+                {{ program.category }}
+              </p>
+              <p class="fee rounded-pill px-2 py-1 text-center">
+                ${{ program.fee }}
+              </p>
             </div>
-            <div class="content mt-5">
-              <div class="d-flex justify-content-between">
-                <p class="category rounded-pill px-3 py-1 text-center">
-                  {{ program.category }}
-                </p>
-                <p class="fee rounded-pill px-2 py-1 text-center">
-                  ${{ program.fee }}
-                </p>
+            <h6>{{ program.progName }}</h6>
+            <p class="fw-bolder">FIGS : ICD</p>
+            <div class="d-flex justify-content-between">
+              <div>
+                <i class="fa-regular fa-calendar text-muted me-2"></i>
+                <span>{{ program.start_date }}</span>
               </div>
-              <h6>{{ program.progName }}</h6>
-              <p class="fw-bolder">FIGS : ICD</p>
-              <div class="d-flex justify-content-between">
-                <div>
-                  <i class="fa-regular fa-calendar text-muted me-2"></i>
-                  <span>{{ program.start_date }}</span>
-                </div>
-                <div>
-                  <i class="fa-regular fa-clock text-muted me-2"></i>
-                  <span class="text-muted">2 years</span>
-                </div>
+              <div>
+                <i class="fa-regular fa-clock text-muted me-2"></i>
+                <span class="text-muted">2 years</span>
               </div>
-              <div class="d-flex justify-content-between mt-2">
-                <div>
-                  <i class="fa-solid fa-earth-americas text-muted me-2"></i>
-                  <span>{{ program.lang }}</span>
-                </div>
-                <div>
-                  <i class="fa-solid fa-location-dot text-muted me-2"></i>
-                  <span class="text-muted">{{ program.city }}</span>
-                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <div>
+                <i class="fa-solid fa-earth-americas text-muted me-2"></i>
+                <span>{{ program.lang }}</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-location-dot text-muted me-2"></i>
+                <span class="text-muted">{{ program.city }}</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <div id="pagination">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
 </section>

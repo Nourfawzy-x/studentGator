@@ -1,0 +1,15 @@
+a {
+  background-color: transparent;
+  color: black;
+  border: #d3d4dc 1px solid;
+}
+i {
+  color: #6f77f4;
+  font-size: larger;
+}
+
+.num:focus {
+  background-color: #6f77f4 !important;
+  color: white;
+  box-shadow: 0 0 0 0 !important;
+}

@@ -1,6 +1,9 @@
 footer {
   background-color: #6f77f4;
   color: white;
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
 }
 .icons {
   width: 35px;
@@ -11,4 +14,53 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+span {
+  font-weight: 400;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+}
+.form-control {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px !important;
+}
+.input-group .btnn {
+  position: absolute;
+  right: 2%;
+  top: 7px;
+
+  background-color: #6f77f4;
+  padding: 8px 30px !important;
+  border-radius: 10px !important;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe {
+  top: -50px; /* Position the div 50px above the footer */
+  left: 50%;
+  transform: translateX(-50%); /* Center the div horizontally */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  padding-top: 10px;
+  background: linear-gradient(139deg, #f2f2f6 -4.59%, #f6ebeb 103.99%);
+}
+
+@media (max-width: 1240px) {
+  .subscribe {
+    width: 90%;
+    padding-top: 10px;
+  }
+  form {
+    margin: 0 !important;
+  }
+
+  .footer-content {
+    padding-top: 70px;
+  }
 }
