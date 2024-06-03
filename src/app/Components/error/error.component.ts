@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './error.component.html',
-  styleUrl: './error.component.css'
+  styles: `div {
+  min-height: 40vh;
+ 
+}`,
 })
-export class ErrorComponent {
-
-}
+export class ErrorComponent {}

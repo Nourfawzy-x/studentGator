@@ -14,6 +14,25 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.icons:hover {
+  animation: pump 1s ease-in-out;
+}
+@keyframes pump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 span {
   font-weight: 400;
@@ -41,16 +60,33 @@ span {
   align-items: center;
 }
 .subscribe {
-  top: -50px; /* Position the div 50px above the footer */
+  top: -50px;
   left: 50%;
   transform: translateX(-50%); /* Center the div horizontally */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   position: absolute;
   padding-top: 10px;
-  background: linear-gradient(139deg, #f2f2f6 -4.59%, #f6ebeb 103.99%);
+  background-color: #f6f0f6;
 }
-
+/*media query for subscribe div*/
+@media (max-width: 550px) {
+  .subscribe .form-control {
+    padding: 10px;
+    margin: 0;
+  }
+  .btnn {
+    position: relative !important;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 90%;
+  }
+  svg {
+    margin-top: 90px !important;
+  }
+}
 @media (max-width: 1240px) {
   .subscribe {
     width: 90%;

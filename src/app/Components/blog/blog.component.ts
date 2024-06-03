@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './blog.component.html',
-  styles: ``
+  styles: `div {
+    min-height: 40vh;
+   
+  }`,
 })
-export class BlogComponent {
-
-}
+export class BlogComponent {}
