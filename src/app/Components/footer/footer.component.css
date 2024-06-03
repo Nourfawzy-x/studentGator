@@ -87,6 +87,7 @@ span {
     margin-top: 90px !important;
   }
 }
+
 @media (max-width: 1240px) {
   .subscribe {
     width: 90%;
