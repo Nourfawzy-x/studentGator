@@ -21,7 +21,9 @@ i:hover {
 .icons-div-responsive {
   display: none !important;
 }
-
+.toggle-icon {
+  color: var(--main-color) !important;
+}
 @media (max-width: 912px) {
   .navbar {
     padding-right: 0 !important;
